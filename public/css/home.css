@@ -13,6 +13,7 @@ header{
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .nav-bar{
@@ -97,6 +98,12 @@ header{
     background-color: #40e0d0;
     padding: 15px;
     color: white;
+    cursor: pointer;
+}
+
+#button-schedules:hover{
+    background-color: #0000068c;
+    transition: ease-in 0.2s;
 }
 
 iframe{
@@ -134,4 +141,70 @@ footer span{
 footer a{
     color: white;
     text-decoration: none;
+}
+
+@media(min-width: 769px){
+   #hamburguer-menu{
+    display: none;
+   }
+
+   .nav-bar{
+    display: flex;
+    list-style-type: none;
+   }
+
+   .nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+   }
+
+   .nav-bar a:hover{
+    color: #0000068c;
+    font-weight: 700;
+    transition: ease-in 0.3s;
+   }
+
+   .nav-bar li{
+    padding: 15px;
+   }
+
+   #main-about img{
+    display: flex
+   }
+
+   .main-about__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+
+   .card-specialties{
+    width: 40%;
+    margin: 15px;
+   }
+
+
+   .main-specialties__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+
+}
+
+@media(min-width:1024px){
+    .card-specialties{
+        width: 30%;
+    }
+
+    .main-specialties__container{
+        max-width: 1024px;
+       }
+    
+    #main-banner h1{
+       margin-left: 200px;
+    }
 }
