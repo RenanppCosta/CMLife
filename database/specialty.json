@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "urlImage": "./assets/ortopedia1.png",
+        "specialty": "Ortopedia"
+    },
+    {
+        "id": 2,
+        "urlImage": "./assets/pediatra.png",
+        "specialty": "Pediatria"
+    },
+    {
+        "id": 3,
+        "urlImage": "./assets/geriatra.png",
+        "specialty": "Geriatria"
+    },
+    {
+        "id": 4,
+        "urlImage": "./assets/psicologo.png",
+        "specialty":"Psicologia"
+    }
+
+]

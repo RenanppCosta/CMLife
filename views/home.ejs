@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/home.css">
+    <link rel="stylesheet" href="/css/home.css">
     <title>CMLife - Home</title>
 </head>
 <body>
     <header>
-        <a href="home.html"><img src="public/assets/logo.png" alt="logo CMLife"></a>
+        <a href="home.html"><img src="/assets/logo.png" alt="logo CMLife"></a>
         <nav>
             <ul class="nav-bar">
                 <li><a href="#main-about">Sobre</a></li>
                 <li><a href="#main-specialties">Especialidades</a></li>
                 <li><a href="#main-contact">Contato</a></li>
             </ul>
-            <a id="hamburguer-menu"><img src="/public/assets/menu (1).svg"></a>
+            <a id="hamburguer-menu"><img src="/assets/menu(1).svg"></a>
         </nav>
     </header>
     <main>
@@ -30,7 +30,7 @@
                 <p>Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com a segurança de que você precisam.</p>
             </div>
             <div class="main-about__list">
-                <img src="public/assets/medico.jpg" alt="medico">
+                <img src="/assets/medico.jpg" alt="medico">
                 <div>
                     <span>AQUI NA NOSSA CLÍNICA VOCÊ ENCONTRA:</span>
                     <ul>
@@ -45,26 +45,20 @@
             </div>
         </section>
         <section id="main-specialties">
+            
             <div class="main-specialties__about">
                 <h3>Uma clínica de multiespecialidade</h3>
                 <p>Nossa clínica possui diversas especialidades. Como ortopedia, pediatra, geriatria, psicologia, fisioterapia e outros.</p>
             </div>
             <div class="main-specialties__container">
+                <% for(let specialty of specialtyList){ %>
                 <div class="card-specialties">
-                    <img src="public/assets/ortopedia1.png" alt="ortopedista">
-                    <span>ORTOPEDIA</span>
- 
+                    <img src="<%= specialty.urlImage %>" alt="<%= specialty.specialty %>">
+                    <span><%= specialty.specialty %></span>
                 </div>
-                <div class="card-specialties">
-                    <img src="public/assets/pediatra.png" alt="pediatra">
-                    <span>PEDIATRIA</span>
-                </div>
-                <div class="card-specialties">
-                    <img src="public/assets/geriatra.png" alt="geriatra">
-                    <span>GERIATRIA</span>
-                </div>
+                <% } %>
             </div>
-            <a id="button-schedules">VER HORÁRIOS</a>
+            <a href="especialidades"id="button-schedules">VER HORÁRIOS</a>
         </section>
         <section id="main-contact">
             <h3>Contato</h3>
@@ -75,7 +69,7 @@
         </section>
     </main>
     <footer>
-        <img src="public/assets/logo.png" alt="logo CMLife">
+        <img src="/assets/logo.png" alt="logo CMLife">
         <span>Telefone e WhatsApp: (21) 99966-5555</span>
         <span>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</span>
         <span>Página fictícia - Desenvolvida por <a href="https://github.com/renanppcosta">Renan Costa</a></span>
