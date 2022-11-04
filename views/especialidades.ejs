@@ -5,29 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMLife - Especialidades</title>
-    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/especialidades.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
     <header>
-        <a href="home.html"><img src="/assets/logo.png" alt="logo CMLife"></a>
+        <a href="/"><img src="/assets/logo.png" alt="logo CMLife"></a>
         <nav>
             <ul class="nav-bar">
-                <li><a href="#main-about">Sobre</a></li>
-                <li><a href="#main-specialties">Especialidades</a></li>
-                <li><a href="#main-contact">Contato</a></li>
+                <li><a href="/#main-about">Sobre</a></li>
+                <li><a href="/#main-specialties">Especialidades</a></li>
+                <li><a href="/#main-contact">Contato</a></li>
             </ul>
-            <a id="hamburguer-menu"><img src="/assets/menu (1).svg"></a>
+            <a id="hamburguer-menu"><img src="/assets/menu.svg"></a>
+            <div class="menu-navbar">
+                <ul>
+                    <li><a href="/#main-about">Sobre</a></li>
+                    <li><a href="/#main-specialties">Especialidades</a></li>
+                    <li><a href="/#main-contact">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <a class="link-specialties" href="#ortopedia">Ortopedia</a>
+        <div class="container-link">
+        <% for(let specialty of hoursList) { %>
+        <a class="link-specialties" href="#<%= specialty.specialty %>"><%= specialty.specialty %></a>
+        <% } %>
+        </div>
         <h3>Conheça nossas especialidades</h3>
-        <section id="#ortopedia">
-            <h4>Ortopedia</h4>
-            <p>A ortopedia é especialidade médica que cuida da sáude relcionada aos elementos do aparelho locomotor, como ossos, músculos, ligamentos e articulações.</p>
-            <div>
-                <img class="img-table" src="/assets/ortopedia.png">
+        <% for(let specialty of hoursList) { %>
+        <section id="#<%= specialty.specialty %>">
+            <h4><%= specialty.specialty %></h4>
+            <p><%= specialty.description %></p>
+            <div class="hours-table">
+                <img class="img-table" src="<%= specialty.urlImage %>">
+
             <table>
                 <thead>
                     <tr>
@@ -37,25 +50,19 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <% for(let hour of specialty.hours) { %>
                     <tr>
-                        <td>Segundas e Quartas</td>
-                        <td>8:00 ás 13:00</td>
-                        <td>Dra. Daniele Almeida</td>
+                        <td><%= hour.days %></td>
+                        <td><%= hour.hour %></td>
+                        <td><%= hour.doctor %></td>
                     </tr>
-                    <tr>
-                        <td>Terça, Quinta e Sexta</td>
-                        <td>14:00 ás 21:00</td>
-                        <td>Dr. Daniel Souza</td>
-                    </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>8:00 ás 21:00</td>
-                        <td>Dr. Manoel Bento</td>
-                    </tr>
+                    <% } %>
                 </tbody>
+                
             </table>
             </div>
         </section>
+        <% } %>
 
     </main>
 
@@ -65,6 +72,6 @@
         <span>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</span>
         <span>Página fictícia - Desenvolvida por <a href="https://github.com/renanppcosta">Renan Costa</a></span>
     </footer>
-    
+    <script src="/js/menu.js"></script>
 </body>
 </html>

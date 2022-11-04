@@ -18,6 +18,13 @@ main{
     color: #0000068c;
 }
 
+.container-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 h3{
     font-size: 26px;
     color: #0000068c;
@@ -35,20 +42,20 @@ p{
     padding: 15px;
 }
 
-div{
+.hours-table{
     display: flex;
     justify-content: center;
     padding: 30px;
 }
 
 .img-table{
-    width: 30%;
+    display: none;
 }
 
 table{
     text-align: left;
     border-spacing: 0;
-    width: 70%;
+    width: 100%;
 }
 
 
@@ -75,5 +82,16 @@ tr:nth-of-type(odd){
     background-color: #f1f1f1;
 }
 
+
+@media(min-width:768px){
+    table{
+        width: 70%;
+    }
+
+    .img-table{
+        width: 30%;
+        display: block;
+    }
+}
 
 

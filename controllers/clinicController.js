@@ -1,4 +1,5 @@
-const specialtyModel = require("../models/Specialty")
+const specialtyModel = require("../models/Specialty");
+const hoursModel = require("../models/Hours");
 
 
 const renderHome = (req, res)=>{
@@ -7,7 +8,8 @@ const renderHome = (req, res)=>{
 }
 
 const renderSpecialtiesPage = (req,res)=>{
-    res.render("especialidades")
+    const hoursList = hoursModel.getAll();
+    res.render("especialidades", {hoursList})
 }
 
 

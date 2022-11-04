@@ -146,6 +146,45 @@ footer a{
     text-decoration: none;
 }
 
+.menu-navbar{
+    display: none;
+}
+
+.sidebar-visible{
+    position: absolute;
+    right: 0;
+    top: 124px;
+    background-color: #40e0d0;
+    border: 1px solid #20c6b6;
+    height: 270px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.sidebar-visible ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.sidebar-visible a{
+    color: #0000068c;
+    font-size: 24px;
+    border-bottom: 1px solid #20c6b6;
+}
+
+.sidebar-visible a:hover{
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+.sidebar-visible li{
+    padding: 20px;
+}
+
 @media(min-width: 769px){
    #hamburguer-menu{
     display: none;

@@ -1,9 +1,152 @@
 [
     {
         "id": 1,
-        "specialty": "ortopedia",
-        "urlImage": "./assets/ortopedia.png"
+        "specialty": "Ortopedia",
+        "urlImage": "./assets/ortopedia.png",
+        "description": "A ortopedia é especialidade médica que cuida da sáude relcionada aos elementos do aparelho locomotor, como ossos, músculos, ligamentos e articulações.",
+        "hours": [{
+            "id": 1,
+            "days": "Segunda e Quartas",
+            "hour": "8:00 as 13:00",
+            "doctor": "Dra. Daniele Almeida"
+        },
+        {
+            "id": 2,
+            "days": "Terça, Quinta e Sexta",
+            "hour": "14:00 as 21:00",
+            "doctor": "Dr. Daniel Souza"
+        },
+        {
+            "id": 3,
+            "days": "Sábado",
+            "hour": "8:00 as 21:00",
+            "doctor": "Dr. Manoel Bento"
+        }
+    ]
 
+    },
+
+    {
+        "id": 2,
+        "specialty": "Pediatria",
+        "urlImage": "./assets/pediatra2.png",
+        "description": "A pediatria é especialidade médica dedicada à assitência à criança e ao adolescente, nos seus diversos aspectos, sejam eles preventivos ou curativos.",
+        "hours": [{
+            "id": 1,
+            "days": "Segunda e Quartas",
+            "hour": "8:00 as 15:00",
+            "doctor": "Dra. Elaine Pinheiro"
+        },
+        {
+            "id": 2,
+            "days": "Terça, Quinta e Sexta",
+            "hour": "13:00 as 21:00",
+            "doctor": "Dr. Anderson Ramos"
+        },
+        {
+            "id": 3,
+            "days": "Sábado",
+            "hour": "8:00 as 12:00",
+            "doctor": "Dra. Manoela Foster"
+        }
+    ]
+
+    },
+    {
+        "id": 3,
+        "specialty": "Geriatria",
+        "urlImage": "./assets/geriatra.png",
+        "description": "A geriatria é o ramo da medicina que foca o estudo, a prevenção e o tratamento de doenças e da incapacidade em idades avançadas.",
+        "hours": [{
+            "id": 1,
+            "days": "Segunda e Quinta",
+            "hour": "9:00 as 12:00",
+            "doctor": "Dr. Antônio Freitas"
+        },
+        {
+            "id": 2,
+            "days": "Terça e Quarta",
+            "hour": "9:00 as 16:00",
+            "doctor": "Dr. Alfred Conceição"
+        },
+        {
+            "id": 3,
+            "days": "Sexta",
+            "hour": "8:00 as 19:00",
+            "doctor": "Dr. Almir Aguiar"
+        },
+        {
+            "id":4,
+            "days": "Sábado",
+            "hour": "8:00 as 14:00",
+            "doctor": "Dra. Andrea Almeida"
+        }
+    ]
+
+    },
+    {
+        "id": 4,
+        "specialty": "Psicologia",
+        "urlImage": "./assets/psicologo.png",
+        "description": "A pediatria é especialidade médica que trata da mente, do estudo e da análise de seus processos e comportamento de indivíduos e grupos humanos em diferentes situações.",
+        "hours": [{
+            "id": 1,
+            "days": "Segunda, Terça e Quarta",
+            "hour": "8:00 as 21:00",
+            "doctor": "Dra. Diane Faguntes"
+        },
+        {
+            "id": 2,
+            "days": "Quinta e Sexta",
+            "hour": "14:00 as 18:00",
+            "doctor": "Dr. Daniel Dias"
+        },
+        {
+            "id": 3,
+            "days": "Sábado",
+            "hour": "10:00 as 15:00",
+            "doctor": "Dra. Beatriz Luz"
+        }
+    ]
+
+    },
+    {
+        "id": 5,
+        "specialty": "Fisioterapia",
+        "urlImage": "./assets/fisioterapia.png",
+        "description": "A fisioterapia é uma ciência da sáude aplicada ao estudo, diagnóstico, prevenção e tratamento de disnfunções cinéticas funcionais de orgãos e sistemas",
+        "hours": [{
+            "id": 1,
+            "days": "Segunda e Quartas",
+            "hour": "8:00 as 15:00",
+            "doctor": "Dra. Maria Fernandes"
+        },
+        {
+            "id": 2,
+            "days": "Segunda e Quinta",
+            "hour": "11:00 as 20:00",
+            "doctor": "Dr. Alberto de Paulo"
+        },
+        {
+            "id": 3,
+            "days": "Terça e Sexta",
+            "hour": "14:00 as 21:00",
+            "doctor": "Dr. Renan Costa"
+        },
+        {
+            "id": 2,
+            "days": "Terça e Quinta",
+            "hour": "8:00 as 14:00",
+            "doctor": "Dra. Elaine Peixoto"
+        },
+        {
+            "id": 3,
+            "days": "Quarta e Sábado",
+            "hour": "8:00 as 21:00",
+            "doctor": "Dra. Elaine Peixoto"
+        }
+    ]
 
     }
+    
 ]
